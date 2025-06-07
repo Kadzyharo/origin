@@ -8,7 +8,7 @@ public:
     Counter() : value(1){}
     Counter(int startValue) : value(startValue){}
 
-    void descrement()
+    void decrement()
     {
         value--;
     }
@@ -16,7 +16,7 @@ public:
     {
         value++;
     }
-    int getValue()
+    int getValue() const
     {
         return value;
     }
@@ -49,7 +49,7 @@ int main()
         }
         else if (choice == '-')
         {
-            counter.descrement();
+            counter.decrement();
         }
         else if (choice == '=')
         {

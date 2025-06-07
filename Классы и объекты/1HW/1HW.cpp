@@ -2,63 +2,33 @@
 
 class Calculator
 {
-private:
     double num1{};
     double num2{};
     
 public:
-    Calculator(double num1t, double num2t)
-    {
-        set_num1(num1t);
-        set_num2(num2t);
-    }
-
-    bool set_num1(double num1t)
-    {
-        if (num1t != 0)
-        {
-            this->num1 = num1t;
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
-    bool set_num2(double num2t)
-    {
-        if (num2t != 0)
-        {
-            this->num2 = num2t;
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
+    Calculator(double num1t, double num2t) : num1(num1t), num2(num2t){}
     
-    double add()
+    double add() const
     {
         return num1 + num2;
     }
-    double multiply()
+    double multiply() const
     {
         return num1 * num2;
     }
-    double subtract_1_2()
+    double subtract_1_2() const
     {
         return num2 - num1;
     }
-    double subtract_2_1()
+    double subtract_2_1() const
     {
         return num1 - num2;
     }
-    double divide_1_2()
+    double divide_1_2() const
     {
         return num1 / num2;
     }
-    double divide_2_1()
+    double divide_2_1() const
     {
         return num2 / num1;
     }
