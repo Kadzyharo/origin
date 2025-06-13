@@ -3,4 +3,4 @@ project(Netologia)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Netologia main.cpp)
+add_executable(2WH 2HW.cpp)

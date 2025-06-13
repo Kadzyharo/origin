@@ -36,7 +36,8 @@ void sort(Address** addresses, int size)
     }
 }
 
-int main() {
+int main()
+{
     std::ifstream input("in.txt");
     std::ofstream output("out.txt");
 
@@ -52,7 +53,8 @@ int main() {
 
     Address** addresses = new Address*[N];
 
-    for (int i = 0; i < N; ++i) {
+    for (int i = 0; i < N; ++i)
+    {
         std::string city, street;
         int house, apartment;
 
@@ -67,7 +69,8 @@ int main() {
     sort(addresses, N);
 
     output << N << "\n";
-    for (int i = 0; i < N; ++i) {
+    for (int i = 0; i < N; ++i)
+    {
         output << addresses[i]->get_output_address() << "\n";
         delete addresses[i];
     }
